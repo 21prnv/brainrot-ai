@@ -1,6 +1,6 @@
 # Brainrot AI Backend
 
-A modular Express.js backend for the AI-powered short video enhancer system. This backend handles video uploads, frame extraction, script generation using OpenAI GPT-4o, text-to-speech with ElevenLabs, and video/audio merging.
+A modular Express.js backend for the AI-powered short video enhancer system. This backend handles video uploads, frame extraction, script generation using OpenAI GPT-4o, text-to-speech with ElevenLabs, video/audio merging, and **subtitle generation**.
 
 ## 🏗️ Architecture
 
@@ -10,7 +10,8 @@ backend/
 ├── config/
 │   └── config.js              # Configuration management
 ├── controllers/
-│   └── videoController.js     # Video processing controller
+│   ├── videoController.js     # Video processing controller
+│   └── subtitleController.js  # Subtitle processing controller
 ├── middleware/
 │   ├── errorHandler.js        # Error handling middleware
 │   ├── notFound.js           # 404 handler
@@ -20,11 +21,13 @@ backend/
 │   └── videoModel.js         # Data persistence layer
 ├── routes/
 │   ├── healthRoutes.js       # Health check endpoints
-│   └── videoRoutes.js        # Video processing endpoints
+│   ├── videoRoutes.js        # Video processing endpoints
+│   └── subtitleRoutes.js     # Subtitle processing endpoints
 ├── services/
 │   ├── elevenlabsService.js  # ElevenLabs TTS integration
 │   ├── ffmpegService.js      # Video processing with FFmpeg
-│   └── openaiService.js      # OpenAI GPT-4o integration
+│   ├── openaiService.js      # OpenAI GPT-4o integration
+│   └── subtitleService.js    # Subtitle generation & processing
 ├── utils/
 │   ├── responseUtils.js      # Standardized API responses
 │   └── storageUtils.js       # File system utilities
@@ -101,16 +104,30 @@ npm start
 - `GET /api/videos/list` - List all videos
 - `DELETE /api/videos/:videoId` - Delete video
 
+### Subtitle Processing
+- `POST /api/subtitles/generate` - Generate subtitles from script
+- `POST /api/subtitles/add-to-video/:videoId` - Add subtitles to existing video
+- `POST /api/subtitles/process` - Upload video and generate subtitles with script
+- `GET /api/subtitles/download/:videoId` - Download subtitle file
+- `GET /api/subtitles/content/:videoId` - Get subtitle content
+- `PUT /api/subtitles/timing/:videoId` - Update subtitle timing
+
 ### Health Check
 - `GET /api/health` - Health check endpoint
 
 ## 🔄 Processing Flow
 
+### Standard Video Processing
 1. **Video Upload** - User uploads video file
 2. **Frame Extraction** - Extract frames using FFmpeg
 3. **Script Generation** - Generate script using OpenAI GPT-4o Vision
 4. **Audio Generation** - Convert script to speech using ElevenLabs
 5. **Video Merging** - Merge original video with new audio using FFmpeg
+
+### Subtitle Processing Flow
+1. **Script Generation** - Generate or receive video script
+2. **Subtitle Creation** - Convert script to SRT/VTT format with smart timing
+3. **Video Processing** - Add subtitles to video (hard-burned or soft)
 
 ## 🛠️ Services
 
@@ -133,6 +150,13 @@ npm start
 - Custom voice settings
 - Audio streaming
 - Speech-to-speech conversion
+
+### Subtitle Service (`services/subtitleService.js`) ⭐ NEW
+- Convert scripts to SRT/VTT formats
+- Smart timing based on word count
+- Burn subtitles into video (hard subtitles)
+- Add soft subtitles as separate tracks
+- Custom styling options
 
 ### Video Model (`models/videoModel.js`)
 - File-based data persistence
@@ -173,6 +197,7 @@ Each video goes through these stages:
 3. `scriptGeneration` - Script generated from frames
 4. `audioGeneration` - Audio created from script
 5. `videoMerging` - Final video with new audio created
+6. `subtitleGeneration` - Subtitles created and added ⭐ NEW
 
 ## 🔍 Monitoring
 
@@ -201,6 +226,12 @@ Each video goes through these stages:
   script: { script: "...", title: "..." },
   audioPath: "/audio/audio.mp3",
   processedVideoPath: "/processed/final.mp4",
+  
+  // NEW: Subtitle fields
+  subtitlePath: "/processed/subtitles.srt",
+  subtitleFormat: "srt",
+  subtitleType: "hard",
+  
   duration: 30.5,
   metadata: {},
   processedAt: "2024-01-01T00:00:00Z",
@@ -210,10 +241,34 @@ Each video goes through these stages:
     frameExtraction: { completed: true, completedAt: "..." },
     scriptGeneration: { completed: true, completedAt: "..." },
     audioGeneration: { completed: true, completedAt: "..." },
-    videoMerging: { completed: false, completedAt: null }
+    videoMerging: { completed: false, completedAt: null },
+    subtitleGeneration: { completed: false, completedAt: null } // NEW
   }
 }
 ```
+
+## 🎬 Subtitle Features
+
+### Supported Formats
+- **SRT (SubRip)** - Most widely supported
+- **WebVTT** - Web standard, HTML5 compatible
+
+### Subtitle Types
+- **Hard Subtitles** - Burned into video, always visible
+- **Soft Subtitles** - Separate track, can be toggled on/off
+
+### Smart Timing
+- Word count-based duration calculation
+- Reading speed optimization (180 WPM)
+- Natural sentence breaks
+- Automatic gap management
+
+### Styling Options
+- Font size (16-48px)
+- Font color (white, black, yellow, red)
+- Position (top, center, bottom)
+- Outline and background
+- Custom font families
 
 ## 🐛 Error Handling
 
@@ -277,6 +332,7 @@ Each video goes through these stages:
 - API key errors: Check environment variables
 - File upload fails: Check file size and permissions
 - Processing stuck: Check service logs
+- Subtitle generation fails: Check script format and video duration
 
 ### Logs
 - Request logs: Morgan middleware

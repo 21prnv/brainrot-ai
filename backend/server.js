@@ -14,6 +14,7 @@ const { initializeStorage } = require('./utils/storageUtils');
 // Import routes
 const videoRoutes = require('./routes/videoRoutes');
 const healthRoutes = require('./routes/healthRoutes');
+const subtitleRoutes = require('./routes/subtitleRoutes');
 
 const app = express();
 
@@ -40,6 +41,7 @@ app.use(express.urlencoded({ extended: true, limit: '10mb' }));
 // Routes
 app.use('/api/health', healthRoutes);
 app.use('/api/videos', videoRoutes);
+app.use('/api/subtitles', subtitleRoutes);
 
 // Error handling middleware
 app.use(notFound);

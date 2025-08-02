@@ -91,9 +91,36 @@ const validateScriptUpdate = (req, res, next) => {
     next();
 };
 
+// Validate subtitle generation request
+const validateSubtitleGeneration = (req, res, next) => {
+    const schema = Joi.object({
+        script: Joi.string().min(10).max(5000).required(),
+        videoDuration: Joi.number().positive().max(3600).required(), // Max 1 hour
+        format: Joi.string().valid('srt', 'vtt').optional(),
+        options: Joi.object().optional()
+    });
+
+    const { error } = schema.validate(req.body);
+    if (error) {
+        return res.status(400).json({
+            success: false,
+            error: {
+                message: 'Validation failed',
+                details: error.details.map(detail => ({
+                    field: detail.path.join('.'),
+                    message: detail.message
+                }))
+            }
+        });
+    }
+
+    next();
+};
+
 module.exports = {
     validateVideoUpload,
     validateScriptGeneration,
     validateVideoId,
-    validateScriptUpdate
+    validateScriptUpdate,
+    validateSubtitleGeneration
 }; 

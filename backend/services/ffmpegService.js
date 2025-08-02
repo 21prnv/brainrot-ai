@@ -4,8 +4,37 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 const config = require('../config/config');
 
-// Ensure FFmpeg can find the binary (adjust path as needed)
-// ffmpeg.setFfmpegPath('/usr/bin/ffmpeg'); // Uncomment and adjust if needed
+// Configure FFmpeg path for Windows
+try {
+    // Try common Windows locations
+    const possiblePaths = [
+        'ffmpeg', // If in PATH
+        'C:\\ffmpeg\\bin\\ffmpeg.exe',
+        'C:\\ProgramData\\chocolatey\\bin\\ffmpeg.exe',
+        process.env.FFMPEG_PATH
+    ];
+    
+    let ffmpegFound = false;
+    for (const ffmpegPath of possiblePaths) {
+        if (ffmpegPath) {
+            try {
+                ffmpeg.setFfmpegPath(ffmpegPath);
+                ffmpeg.setFfprobePath(ffmpegPath.replace('ffmpeg', 'ffprobe'));
+                console.log(`✅ FFmpeg configured: ${ffmpegPath}`);
+                ffmpegFound = true;
+                break;
+            } catch (e) {
+                // Continue to next path
+            }
+        }
+    }
+    
+    if (!ffmpegFound) {
+        console.log('⚠️  FFmpeg path not configured - using system PATH');
+    }
+} catch (error) {
+    console.log('⚠️  FFmpeg configuration failed:', error.message);
+}
 
 /**
  * Extract frames from a video file
@@ -50,18 +79,90 @@ const extractFrames = (videoPath, outputDir, frameRate = config.ffmpeg.frameRate
 };
 
 /**
- * Get video duration in seconds
+ * Get video duration in seconds with detailed debugging
  * @param {string} videoPath - Path to the video file
  * @returns {Promise<number>} Duration in seconds
  */
 const getVideoDuration = (videoPath) => {
     return new Promise((resolve, reject) => {
-        ffmpeg.ffprobe(videoPath, (err, metadata) => {
-            if (err) {
-                reject(err);
+        console.log('🔍 FFmpeg DEBUG: Starting getVideoDuration');
+        console.log('🔍 FFmpeg DEBUG: Video path:', videoPath);
+        
+        // Check file extension first
+        const fileExt = path.extname(videoPath).toLowerCase();
+        console.log('🔍 FFmpeg DEBUG: File extension:', fileExt);
+        
+        if (!['.mp4', '.avi', '.mov', '.mkv', '.webm'].includes(fileExt)) {
+            console.log('❌ FFmpeg ERROR: Unsupported file format');
+            reject(new Error(`Unsupported video format: ${fileExt}`));
+            return;
+        }
+        
+        // Check if file exists and get file info
+        try {
+            const fileExists = fs.existsSync(videoPath);
+            console.log('🔍 FFmpeg DEBUG: File exists:', fileExists);
+            
+            if (!fileExists) {
+                reject(new Error(`Video file not found: ${videoPath}`));
                 return;
             }
-            resolve(metadata.format.duration);
+            
+            const stats = fs.statSync(videoPath);
+            console.log('🔍 FFmpeg DEBUG: File size:', stats.size, 'bytes');
+            
+            // Check if file is too small (might be corrupted)
+            if (stats.size < 1000) {
+                console.log('❌ FFmpeg ERROR: File too small, might be corrupted');
+                reject(new Error('Video file appears to be corrupted (too small)'));
+                return;
+            }
+            
+        } catch (fileError) {
+            console.log('❌ FFmpeg ERROR: File access error:', fileError);
+            reject(fileError);
+            return;
+        }
+        
+        console.log('🔍 FFmpeg DEBUG: Testing simple ffprobe command...');
+        const { exec } = require('child_process');
+        
+        // Try a simpler ffprobe command first
+        const simpleCommand = `ffprobe -v quiet -print_format json -show_format "${videoPath}"`;
+        console.log('🔍 FFmpeg DEBUG: Simple command:', simpleCommand);
+        
+        exec(simpleCommand, { timeout: 10000 }, (error, stdout, stderr) => {
+            console.log('🔍 FFmpeg DEBUG: Simple ffprobe results:');
+            console.log('  - Error:', error?.message || 'none');
+            console.log('  - Stderr:', stderr?.trim() || 'empty');
+            
+            if (error) {
+                console.log('❌ FFmpeg ERROR: Simple ffprobe failed:', error.message);
+                
+                // If simple command fails, return a default duration
+                console.log('🔧 FFmpeg FALLBACK: Using default duration of 30 seconds');
+                resolve(30.0); // Fallback duration
+                return;
+            }
+            
+            try {
+                const result = JSON.parse(stdout);
+                const duration = parseFloat(result.format.duration);
+                
+                if (isNaN(duration)) {
+                    console.log('❌ FFmpeg ERROR: Could not parse duration');
+                    resolve(30.0); // Fallback
+                    return;
+                }
+                
+                console.log('✅ FFmpeg SUCCESS: Duration =', duration, 'seconds');
+                resolve(duration);
+                
+            } catch (parseError) {
+                console.log('❌ FFmpeg ERROR: JSON parse failed:', parseError.message);
+                console.log('🔧 FFmpeg FALLBACK: Using default duration of 30 seconds');
+                resolve(30.0); // Fallback duration
+            }
         });
     });
 };

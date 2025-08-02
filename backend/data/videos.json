@@ -1,0 +1,759 @@
+{
+  "e8541dd9-2775-42dc-916a-f0288a2e1259": {
+    "id": "e8541dd9-2775-42dc-916a-f0288a2e1259",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\577ae4ee-fae8-4dc9-8a01-7b449172d05a-1753464173609.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-25T17:22:53.684Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "So this is how they start a trip on this water slide.\r\n\r\nFirst they wait for the go-ahead from the lifeguard. He does not look ready.\r\nHere it comes, the floor disappears!\r\nAnd now the rider is moving super-fast.\r\nGaining speed as he enters the loop!\r\nHe makes it all the way around.\r\nWhat a wild experience! And he’s done.\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-25T17:22:53.687Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-25T17:22:53.687Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "33e04f78-3c72-40ea-98cf-5675e528b8cd": {
+    "id": "33e04f78-3c72-40ea-98cf-5675e528b8cd",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\d2b881c1-1f78-472c-81c6-f922991ca3fa-1753509422319.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T05:57:02.386Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Alright, here comes this guy about to take on a waterslide that goes through a loop.\r\n\r\nHe’s getting in there… crossing his arms. Now that’s how you know he’s scared! \r\n\r\nAnd here we go, he’s about to fall through the trapdoor.\r\nIt’s like waiting for your doom up there!\r\nOh no, here comes the loop!\r\n\r\nHe’s flying through that thing! Looks like he made it okay.\r\nAnd he's out, splashing in the water.\r\nHe looks good, all smiles, happy to be alive!\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": 45.534331,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T05:57:04.376Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T05:57:02.397Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "574b3e79-1db0-424b-a579-e846bd2ec6b9": {
+    "id": "574b3e79-1db0-424b-a579-e846bd2ec6b9",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\33bc435b-225d-415a-a5a5-4d380aefe405-1753509737284.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T06:02:17.318Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "This looks like a standard water slide at first... but it has a crazy twist!\r\n\r\nFirst, this guy is getting ready. He’s doing the classic arms-crossed-look-scared pose.\r\nAnd the doors open!\r\nHe’s off, and you can see the other water slides down below.\r\nIt’s all smooth sailing so far, but waiting for the drop is TERRIFYING.\r\nHere it comes… straight down.\r\nNow he's building up speed, ready for the loop.\r\nAnd there he goes, entering the loop! You've got to wonder what that feels like.\r\nHe shoots out at over 40 miles an hour — what a rush!"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T06:02:17.320Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T06:02:17.320Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "ccea3c31-27b4-429c-9bdd-6fec32a8f66b": {
+    "id": "ccea3c31-27b4-429c-9bdd-6fec32a8f66b",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\48ae9d89-e8a5-40fc-acc3-e3c04c2b1441-1753510583664.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T06:16:23.707Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "This kid is stepping into the water slide. It looks innocent… but there's a twist. \r\nHe folds his arms and braces himself — and the floor drops out from under him! \r\nZooming down into the darkness… that can't be good.\r\nNow the big turn… wait for it…\r\n…and BAM! He's going through the loop at 40 miles per hour! \r\nHe shoots through it like a cannonball, still in one piece.\r\nThat splash at the end? Awesome.\r\nHe survived! Want to go again?\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T06:16:23.708Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T06:16:23.708Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "a54d6951-a957-4af8-a36b-e36f7c5969a4": {
+    "id": "a54d6951-a957-4af8-a36b-e36f7c5969a4",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\989a1831-24c4-437a-a92e-8f5f1c55c061-1753511082181.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T06:24:42.218Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here comes a guy, all set to brave this insane water slide.\r\nAnd this is not just any slide—it goes through a loop!\r\nHe's positioning himself, crosses his arms… probably getting ready for the cold water.\r\nThe hatch drops, and he's gone!\r\nTotal darkness, then suddenly daylight as he hurtles towards the loop.\r\nHere he goes through the loop at 40 mph—2.5 Gs of force!\r\nAnd he splashes down—what a ride!\r\nNow, who's next?\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T06:24:42.219Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T06:24:42.219Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "404384a4-a220-49bf-b5be-fb858c417207": {
+    "id": "404384a4-a220-49bf-b5be-fb858c417207",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\1dac4a2d-0b05-4a04-a760-87629e575311-1753512167231.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T06:42:47.295Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "This water slide is no joke… It goes through a loop!\r\nHe crosses his arms… is he nervous?\r\nOh, there he goes! He disappeared into the tunnel.\r\nCan we even see him go through the loop?\r\nWoah! He's through!\r\nThat must have been wild.\r\nHe looks like he had fun.\r\nWho's next?"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T06:42:47.309Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T06:42:47.309Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "3887830a-a61b-4e71-ad67-8e051fd7116c": {
+    "id": "3887830a-a61b-4e71-ad67-8e051fd7116c",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\44d20241-a295-46f1-827e-d66095b54499-1753513144840.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T06:59:04.908Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "This water slide goes through a loop—yikes!\r\n\r\nAnd there he goes, psyching himself up for it. Arms crossed. He looks nervous. Here we go.\r\n\r\nHe's going down, and getting ready to go through the loop. Now he's going through it!\r\n\r\nLooks terrifying. I don't know if I'd do it."
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T06:59:04.909Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T06:59:04.909Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "23e617cc-160f-422f-8fad-ed92718c025b": {
+    "id": "23e617cc-160f-422f-8fad-ed92718c025b",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\605e97ad-f0db-4fe7-9d7e-c12df4107cd1-1753513302906.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T07:01:42.948Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "This water slide goes through a loop. Looks like a big thrill.\r\n\r\nHe braces himself. Arms crossed, ready to go.\r\nAnd here he goes!\r\n\r\nDropping fast, must be so intense in there. \r\nHe is shooting through the loop like a rocket.\r\nWow, what a ride!\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": 11.267,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T07:01:43.028Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T07:01:42.949Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "fe891a50-3fc5-4828-b449-04ee0451b014": {
+    "id": "fe891a50-3fc5-4828-b449-04ee0451b014",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\2bff00bd-cded-4fca-93d6-71c5c5ce2731-1753513583862.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T07:06:23.903Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Okay, this water slide goes THROUGH a LOOP?!\r\nHe’s giving the camera the crossed arms of anticipation.\r\nAnd now he’s gone, disappearing into the slide.\r\nThe translucent walls reveal a few splashes and a whole lot of gravity.\r\nIt’s loop-dee-loop time!\r\nThe momentum is carrying him to the bottom.\r\nWhat a splash! \r\nHe just conquered that slide."
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": 11.267,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T07:06:23.977Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T07:06:23.904Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "1347e6dd-494e-4e28-9ec7-29111f64e452": {
+    "id": "1347e6dd-494e-4e28-9ec7-29111f64e452",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\6348be58-875f-4328-a396-767cd2a35045-1753513806282.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T07:10:06.342Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Alright, this water slide goes through a loop. How do you even prepare for that?\r\n\r\nThis guy looks like he’s bracing for impact. I guess it’s the only way to do it?\r\n\r\nThe doors slam shut… here we go! Wonder how fast he's gonna be going?\r\n\r\nThrough the tube, down the slide… oh man, here comes the loop!\r\n\r\nHe flies through it like a rocket! And he made it! \r\n\r\nBig splash at the end there. You know that water went right up his nose. \r\n\r\nBut he's alive! And he just conquered the loop-de-loop water slide!"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": 11.267,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T07:10:06.419Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T07:10:06.342Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd": {
+    "id": "fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\5854759c-93dc-4e07-91ae-188af311ccdd-1753514239214.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-07-26T07:17:19.262Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "So this water slide goes through a loop.\r\n\r\nAnd here’s the guy about to take on that challenge. He seems a little hesitant, but ready. \r\nHe crosses his arms, preparing for the plunge. \r\nAnd he’s off! \r\nThis is wild — he's already gaining speed.\r\nHe's rounding the corner — the loop's coming up fast.\r\nHere he goes through the loop!\r\nWow, he made it all the way around.  He’s probably a little dizzy, but definitely alive.\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": "storage\\processed\\fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd\\fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd_with_subtitles.mp4",
+    "duration": 11.267,
+    "metadata": {},
+    "processedAt": "2025-07-26T07:17:19.357Z",
+    "updatedAt": "2025-07-26T07:17:19.358Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T07:17:19.263Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd\\fd4d3823-d3a7-47e0-b824-8e7e9cb56ecd_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "42208feb-f10a-4c57-afdb-e24f4231be5b": {
+    "id": "42208feb-f10a-4c57-afdb-e24f4231be5b",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\714e4ed4-4aee-474e-817c-357aa2dbb93c-1753546476093.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T16:14:36.147Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Alright, so this water slide goes through a loop? Wild.\r\nThis kid looks a little nervous as he gets ready to go down.\r\nHere he goes, bracing himself!\r\nOh yeah, you gotta squeeze your eyes shut here.\r\nHe's shooting down the slide now, coming up to the loop.\r\nOkay, here we go, through the loop!\r\nAnd out the other side, wow, he made it! \r\nThat had to be a rush."
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T16:14:36.148Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T16:14:36.148Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "d47dbb92-0305-4ae0-964d-532961fb5f03": {
+    "id": "d47dbb92-0305-4ae0-964d-532961fb5f03",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\aa74d51f-f9a3-4432-abef-23b5a6601b5b-1753546647467.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-26T16:17:27.534Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Looks like he's getting ready for a serious water slide!\r\n\r\nHe's in! Arms crossed, looks like he's bracing for impact. And here he goes!\r\n\r\nFull speed ahead, completely vertical now… Is this thing clear all the way through?\r\nOh my gosh, he's almost upside down! And he made it!\r\n\r\nHuge splashdown at the end. That had to hurt!\r\nHe pops right up, though. What a ride!\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-26T16:17:27.535Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-26T16:17:27.535Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "348366bf-ae19-4dd5-b97a-99501847ce49": {
+    "id": "348366bf-ae19-4dd5-b97a-99501847ce49",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\4502797c-fbce-413c-8a17-45b97a3c8825-1753615534357.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-27T11:25:34.522Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here he goes, this water slide has a loop!\r\nHe is ready to go!\r\nOh man, he looks kinda nervous.\r\nBracing himself.\r\nAnd now he is off!\r\nHope he makes it through.\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-27T11:25:34.525Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-27T11:25:34.525Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "abb06aab-e9d3-4ba9-8005-f7a71ac134dc": {
+    "id": "abb06aab-e9d3-4ba9-8005-f7a71ac134dc",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\9de53d2e-33c1-46c7-b3bb-cf4be46f81b9-1753616066809.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "processing",
+    "uploadedAt": "2025-07-27T11:34:26.932Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here he is at the top of this insane loop water slide.\r\nHe crosses his arms — is he scared?\r\nDown he goes!\r\nHe shoots through the loop, head first! \r\nWow, what a ride.\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": null,
+    "duration": null,
+    "metadata": {},
+    "processedAt": null,
+    "updatedAt": "2025-07-27T11:34:26.933Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-27T11:34:26.933Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    }
+  },
+  "20e5b610-7b0f-47bb-9e1b-e7ced4d62313": {
+    "id": "20e5b610-7b0f-47bb-9e1b-e7ced4d62313",
+    "originalName": "Untitled video - Made with Clipchamp (24).mp4",
+    "filePath": "storage\\uploads\\096252ce-dd2c-4990-8043-110aae10ff5c-1753616259281.mp4",
+    "fileSize": 13006925,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-07-27T11:37:39.363Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here’s our daredevil, ready for the slide. Looks kinda nervous!\r\nArms crossed, he drops through the floor…\r\nWhoa! He's gone. We’ll see him at the bottom.\r\nWonder if he liked it?\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": "storage\\processed\\20e5b610-7b0f-47bb-9e1b-e7ced4d62313\\20e5b610-7b0f-47bb-9e1b-e7ced4d62313_with_subtitles.mp4",
+    "duration": 11.267,
+    "metadata": {},
+    "processedAt": "2025-07-27T11:37:46.122Z",
+    "updatedAt": "2025-07-27T11:37:46.123Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-07-27T11:37:39.365Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\20e5b610-7b0f-47bb-9e1b-e7ced4d62313\\20e5b610-7b0f-47bb-9e1b-e7ced4d62313_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "7e1f1dc9-8246-4668-b97c-d48939103954": {
+    "id": "7e1f1dc9-8246-4668-b97c-d48939103954",
+    "originalName": "POV_ Water slide with a LOOP.mp4",
+    "filePath": "storage\\uploads\\9ac8e3a3-da7c-40c0-af6c-1fb996b001a1-1754152743736.mp4",
+    "fileSize": 6380873,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-02T16:39:03.801Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we go! It’s a sunny day at the water park.\r\n\r\nCheck out this guy. He’s stepping up to a slide that’s not for the faint of heart. This water slide goes through a loop.\r\n\r\nHe looks a little nervous… Yeah, he crosses his arms. He knows what's coming.\r\n\r\nThe countdown is on, and BAM, he's off!\r\n\r\nLet’s GO! He’s accelerating fast. \r\n\r\nWaiting for the drop looks terrifying.\r\n\r\nAnd there he goes — straight into darkness. Oh my gosh!\r\n\r\nEntering the loop…\r\n\r\nHe’s picking up speed as he drops. That’s a 2.5G force.\r\n\r\nHe is flying through this loop! He's going like, 40mph.\r\n\r\nWhat a rush!\r\n\r\nAnd he shoots out into the pool, making a huge splash. Bet he’s ready to go again. That looks amazing!"
+    },
+    "audioPath": null,
+    "processedVideoPath": "storage\\processed\\7e1f1dc9-8246-4668-b97c-d48939103954\\7e1f1dc9-8246-4668-b97c-d48939103954_with_subtitles.mp4",
+    "duration": 45.534331,
+    "metadata": {},
+    "processedAt": "2025-08-02T16:39:31.888Z",
+    "updatedAt": "2025-08-02T16:39:31.889Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-02T16:39:03.806Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\7e1f1dc9-8246-4668-b97c-d48939103954\\7e1f1dc9-8246-4668-b97c-d48939103954_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  }
+}
