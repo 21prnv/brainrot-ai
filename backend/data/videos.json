@@ -755,5 +755,146 @@
     "subtitlePath": "storage\\processed\\7e1f1dc9-8246-4668-b97c-d48939103954\\7e1f1dc9-8246-4668-b97c-d48939103954_subtitles.srt",
     "subtitleFormat": "srt",
     "subtitleType": "hard"
+  },
+  "9ad4304d-6b5f-45a6-8f09-f715e768c4cb": {
+    "id": "9ad4304d-6b5f-45a6-8f09-f715e768c4cb",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\59f6b404-9e55-4140-866f-890e85474b87-1754671006638.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-08T16:36:46.787Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we see a little baby ready for playtime.\r\n\r\nThe helper grabs a toy for the kid…\r\nAnd then chaos!\r\n\r\nShe jumps back like she's terrified, but the baby's unbothered.\r\nAnd now the helper's rolling on the floor laughing.\r\n\r\nOh my gosh, I want to know what toy that is!"
+    },
+    "audioPath": null,
+    "processedVideoPath": "storage\\processed\\9ad4304d-6b5f-45a6-8f09-f715e768c4cb\\9ad4304d-6b5f-45a6-8f09-f715e768c4cb_with_subtitles.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-08T16:36:53.806Z",
+    "updatedAt": "2025-08-08T16:36:53.809Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-08T16:36:46.789Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\9ad4304d-6b5f-45a6-8f09-f715e768c4cb\\9ad4304d-6b5f-45a6-8f09-f715e768c4cb_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "3a292f70-7356-4d08-bb44-0b13a28dcbae": {
+    "id": "3a292f70-7356-4d08-bb44-0b13a28dcbae",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\c3128d68-69a8-48a7-b6a5-c3fafc319993-1754671149188.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-08T16:39:09.343Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we are in what looks like a baby’s play area.\r\n\r\nMom is holding the child. The nanny approaches with a baby bottle and starts tickling the baby.\r\nShe surprises Mom. Everyone starts laughing.\r\nShe falls to the ground! What a reaction!\r\n"
+    },
+    "audioPath": null,
+    "processedVideoPath": "storage\\processed\\3a292f70-7356-4d08-bb44-0b13a28dcbae\\3a292f70-7356-4d08-bb44-0b13a28dcbae_with_subtitles.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-08T16:39:14.753Z",
+    "updatedAt": "2025-08-08T16:39:14.754Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-08T16:39:09.345Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\3a292f70-7356-4d08-bb44-0b13a28dcbae\\3a292f70-7356-4d08-bb44-0b13a28dcbae_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "a2af4edf-d944-4b7e-aedf-d8a6b211a755": {
+    "id": "a2af4edf-d944-4b7e-aedf-d8a6b211a755",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\1dbc885a-f8e9-4a4a-b197-69c214bbbed0-1754671444246.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-08T16:44:04.362Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "A woman holds a baby.\r\n\r\nAnd here comes the nanny with a toy. \r\n\r\nIt's all fun and games as she pretends to give the baby a pacifier. \r\n\r\nOh, what's this? The nanny tries to trick the woman… but it backfires! \r\n\r\nShe's on the floor, and everyone's laughing!"
+    },
+    "audioPath": "storage\\processed\\a2af4edf-d944-4b7e-aedf-d8a6b211a755\\a2af4edf-d944-4b7e-aedf-d8a6b211a755_audio.mp3",
+    "processedVideoPath": "storage\\processed\\a2af4edf-d944-4b7e-aedf-d8a6b211a755\\a2af4edf-d944-4b7e-aedf-d8a6b211a755_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-08T16:44:14.820Z",
+    "updatedAt": "2025-08-08T16:44:14.823Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-08T16:44:04.365Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\a2af4edf-d944-4b7e-aedf-d8a6b211a755\\a2af4edf-d944-4b7e-aedf-d8a6b211a755_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
   }
 }

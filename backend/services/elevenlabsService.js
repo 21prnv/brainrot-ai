@@ -36,7 +36,7 @@ const getAvailableVoices = async () => {
 };
 
 /**
- * Generate audio from text using ElevenLabs TTS
+ * Generate audio from text using ElevenLabs TTS with specific output format
  * @param {string} text - Text to convert to speech
  * @param {string} voiceId - Voice ID to use (optional, uses default if not provided)
  * @param {string} outputPath - Path to save the audio file
@@ -73,9 +73,9 @@ const generateAudio = async (text, voiceId = null, outputPath, options = {}) => 
             }
         };
 
-        // Make request to ElevenLabs
+        // Make request to ElevenLabs with your specific endpoint
         const response = await axios.post(
-            `${ELEVENLABS_API_URL}/text-to-speech/${selectedVoiceId}`,
+            `${ELEVENLABS_API_URL}/text-to-speech/${selectedVoiceId}?output_format=mp3_44100_128`,
             payload,
             {
                 headers: {

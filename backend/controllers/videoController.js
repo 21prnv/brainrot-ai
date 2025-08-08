@@ -114,7 +114,7 @@ const processVideoAsync = async (videoId, options = {}) => {
 
         // Step 4: Merge video with new audio
         videoModel.updateStatus(videoId, 'merging_audio');
-        const outputPath = await ffmpegService.mergeAudioVideo(video.filePath, audioPath, videoId);
+        const outputPath = await ffmpegService.mergeVideoWithAudio(video.filePath, audioPath, videoId);
         videoModel.updateOutput(videoId, outputPath);
 
         // Mark as completed

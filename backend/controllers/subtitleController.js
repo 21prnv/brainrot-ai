@@ -3,6 +3,7 @@ const path = require('path');
 const fs = require('fs');
 const subtitleService = require('../services/subtitleService');
 const ffmpegService = require('../services/ffmpegService');
+const elevenlabsService = require('../services/elevenlabsService');
 const videoModel = require('../models/videoModel');
 const config = require('../config/config');
 const { successResponse, errorResponse, notFoundResponse } = require('../utils/responseUtils');
@@ -140,7 +141,7 @@ const processVideoWithSubtitles = async (req, res) => {
     
     try {
         console.log('🔍 Step 1: Parsing request');
-        const { script, format = 'srt', subtitleType = 'hard', styling = {} } = req.body;
+        const { script, format = 'srt', subtitleType = 'hard', styling = {}, voiceId = null } = req.body;
 
         if (!req.file) {
             console.log('❌ ERROR: No file uploaded');
@@ -176,7 +177,6 @@ const processVideoWithSubtitles = async (req, res) => {
         console.log('✅ Step 3 complete - Video record created');
 
         console.log('🔍 Step 4: Getting video duration with FFmpeg');
-        // THIS IS LIKELY WHERE IT CRASHES
         const videoDuration = await ffmpegService.getVideoDuration(videoPath);
         console.log('✅ Step 4 complete - Video duration:', videoDuration);
 
@@ -189,8 +189,7 @@ const processVideoWithSubtitles = async (req, res) => {
         console.log('Output directory:', outputDir);
 
         console.log('🔍 Step 7: Processing subtitles');
-        // THIS MIGHT ALSO CRASH
-        const result = await subtitleService.processSubtitles(
+        const subtitleResult = await subtitleService.processSubtitles(
             script,
             videoDuration,
             outputDir,
@@ -205,37 +204,101 @@ const processVideoWithSubtitles = async (req, res) => {
         );
         console.log('✅ Step 7 complete - Subtitles processed');
 
-        console.log('🔍 Step 8: Updating final video record');
+        // NEW: Step 8 - Generate audio with ElevenLabs
+        console.log('🔍 Step 8: Generating audio with ElevenLabs');
+        let audioPath = null;
+        try {
+            const audioFileName = `${videoId}_audio.mp3`;
+            const audioOutputPath = path.join(outputDir, audioFileName);
+            
+            console.log('🔍 AUDIO DEBUG: Generating audio for script:', script.substring(0, 100) + '...');
+            console.log('🔍 AUDIO DEBUG: Using voice ID:', voiceId || 'default');
+            console.log('🔍 AUDIO DEBUG: Output path:', audioOutputPath);
+            
+            const audioResult = await elevenlabsService.generateAudio(
+                script,
+                voiceId,
+                audioOutputPath,
+                { model: 'eleven_multilingual_v2' }
+            );
+            
+            audioPath = audioResult.data.audioPath;
+            console.log('✅ Step 8 complete - Audio generated:', audioPath);
+            console.log('🔍 AUDIO DEBUG: Audio file size:', audioResult.data.fileSize, 'bytes');
+            
+        } catch (audioError) {
+            console.error('❌ AUDIO ERROR: Failed to generate audio:', audioError);
+            console.log('🔧 AUDIO FALLBACK: Continuing without audio generation');
+        }
+
+        // NEW: Step 9 - Merge video with audio (if audio was generated)
+        console.log('🔍 Step 9: Merging video with audio');
+        let finalVideoPath = subtitleResult.videoWithSubtitles;
+        
+        if (audioPath && fs.existsSync(audioPath)) {
+            try {
+                console.log('🔍 MERGE DEBUG: Merging video with audio');
+                console.log('🔍 MERGE DEBUG: Video path:', subtitleResult.videoWithSubtitles);
+                console.log('🔍 MERGE DEBUG: Audio path:', audioPath);
+                
+                const finalVideoFileName = `${videoId}_final.mp4`;
+                const finalVideoOutputPath = path.join(outputDir, finalVideoFileName);
+                
+                const mergedVideoPath = await ffmpegService.mergeVideoWithAudio(
+                    subtitleResult.videoWithSubtitles,
+                    audioPath,
+                    finalVideoOutputPath
+                );
+                
+                finalVideoPath = mergedVideoPath;
+                console.log('✅ Step 9 complete - Video merged with audio:', finalVideoPath);
+                
+            } catch (mergeError) {
+                console.error('❌ MERGE ERROR: Failed to merge video with audio:', mergeError);
+                console.log('🔧 MERGE FALLBACK: Using video with subtitles only');
+                finalVideoPath = subtitleResult.videoWithSubtitles;
+            }
+        } else {
+            console.log('🔍 MERGE DEBUG: No audio to merge, using video with subtitles only');
+        }
+
+        console.log('🔍 Step 10: Updating final video record');
         const updateData = {
-            subtitlePath: result.subtitlePath,
+            subtitlePath: subtitleResult.subtitlePath,
             subtitleFormat: format,
             subtitleType,
             status: 'completed',
             processedAt: new Date().toISOString()
         };
 
-        if (result.videoWithSubtitles) {
-            updateData.processedVideoPath = result.videoWithSubtitles;
+        if (finalVideoPath) {
+            updateData.processedVideoPath = finalVideoPath;
+        }
+
+        if (audioPath) {
+            updateData.audioPath = audioPath;
         }
 
         videoModel.update(videoId, updateData);
-        console.log('✅ Step 8 complete - Record updated');
+        console.log('✅ Step 10 complete - Record updated');
 
         console.log('🎉 SUCCESS: All processing complete');
         successResponse(res, {
             videoId,
             originalName: req.file.originalname,
-            subtitlePath: result.subtitlePath,
-            videoWithSubtitles: result.videoWithSubtitles,
-            format: result.format,
+            subtitlePath: subtitleResult.subtitlePath,
+            videoWithSubtitles: subtitleResult.videoWithSubtitles,
+            finalVideoPath: finalVideoPath,
+            audioPath: audioPath,
+            format: subtitleResult.format,
             subtitleType,
             duration: videoDuration
-        }, 'Video processed with subtitles successfully', 201);
+        }, 'Video processed with subtitles and audio successfully', 201);
 
     } catch (error) {
         console.error('💥 CRASH in processVideoWithSubtitles:', error);
         console.error('💥 Stack trace:', error.stack);
-        errorResponse(res, 'Failed to process video with subtitles', 500, error);
+        errorResponse(res, 'Failed to process video with subtitles and audio', 500, error);
     }
 };
 

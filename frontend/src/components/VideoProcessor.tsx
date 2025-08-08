@@ -8,7 +8,7 @@ import {
 const ai = new GoogleGenAI({
   apiKey:
     import.meta.env.VITE_GOOGLE_AI_API_KEY ||
-    "AIzaSyBu67S0mOmrzADqcq8EiThJJ1-qnd6cu2M",
+    "AIzaSyBj67DtbPmqVeKqn887qtNVcVG3VRORKhw",
 });
 
 // Updated prompt with duration parameter
