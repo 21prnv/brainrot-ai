@@ -58,7 +58,8 @@ const generateAudio = async (text, voiceId = null, outputPath, options = {}) => 
             stability = 0.5,
             similarityBoost = 0.5,
             style = 0.5,
-            speakerBoost = true
+            speakerBoost = true,
+            speed = 1.0
         } = options;
 
         // Prepare request payload

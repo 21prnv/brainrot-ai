@@ -896,5 +896,334 @@
     "subtitlePath": "storage\\processed\\a2af4edf-d944-4b7e-aedf-d8a6b211a755\\a2af4edf-d944-4b7e-aedf-d8a6b211a755_subtitles.srt",
     "subtitleFormat": "srt",
     "subtitleType": "hard"
+  },
+  "8315e85c-133f-46a8-88d4-d276320418dd": {
+    "id": "8315e85c-133f-46a8-88d4-d276320418dd",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\793b7500-85d4-4f3d-b531-25daca2ba3fc-1754839333628.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:22:13.885Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we are inside, looks like playtime!\r\nMom is holding her little one.\r\nHere comes the nanny with toys.\r\nWait for it... she throws one up!\r\nThey're playing keep away. Mom's laughing now.\r\nThen the nanny drops to the floor, laughing. \r\nWhat a fun moment for them. \r\nThese two are having a blast."
+    },
+    "audioPath": "storage\\processed\\8315e85c-133f-46a8-88d4-d276320418dd\\8315e85c-133f-46a8-88d4-d276320418dd_audio.mp3",
+    "processedVideoPath": "storage\\processed\\8315e85c-133f-46a8-88d4-d276320418dd\\8315e85c-133f-46a8-88d4-d276320418dd_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:22:29.012Z",
+    "updatedAt": "2025-08-10T15:22:29.013Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:22:13.908Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\8315e85c-133f-46a8-88d4-d276320418dd\\8315e85c-133f-46a8-88d4-d276320418dd_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "4e094858-1ada-493f-85dc-0db3cc09b3bf": {
+    "id": "4e094858-1ada-493f-85dc-0db3cc09b3bf",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\f364531a-f1d3-4a74-af52-1a3d856ae22d-1754839900857.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:31:41.032Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Mom's holding the baby, and here comes... an aunt?\r\n\r\nA bottle and pacifier fly toward the baby. What's going on here?!\r\n\r\nIt's a sneak attack! Mom's laughing hysterically. What a silly game.\r\n\r\nEveryone is on the floor now, still cracking up. Family fun!\r\n"
+    },
+    "audioPath": "storage\\processed\\4e094858-1ada-493f-85dc-0db3cc09b3bf\\4e094858-1ada-493f-85dc-0db3cc09b3bf_audio.mp3",
+    "processedVideoPath": "storage\\processed\\4e094858-1ada-493f-85dc-0db3cc09b3bf\\4e094858-1ada-493f-85dc-0db3cc09b3bf_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:31:53.848Z",
+    "updatedAt": "2025-08-10T15:31:53.850Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:31:41.034Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\4e094858-1ada-493f-85dc-0db3cc09b3bf\\4e094858-1ada-493f-85dc-0db3cc09b3bf_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "b9ddb190-4b0f-4dd0-bb08-56e286e4192b": {
+    "id": "b9ddb190-4b0f-4dd0-bb08-56e286e4192b",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\216217c0-1d55-4ed3-b58b-66b41476a9e6-1754840875674.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:47:55.827Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we see a cute little baby. Mom's holding the baby.\r\n\r\nBut now the other woman's ready to play a game!\r\n\r\nShe tickles the baby, making everyone laugh!\r\n\r\nThe game escalates! Now the laughter is contagious.\r\n"
+    },
+    "audioPath": "storage\\processed\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b_audio.mp3",
+    "processedVideoPath": "storage\\processed\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:48:08.920Z",
+    "updatedAt": "2025-08-10T15:48:08.923Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:47:55.830Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b\\b9ddb190-4b0f-4dd0-bb08-56e286e4192b_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "b5b41af1-c09b-4a0c-a56f-61e9ad2668ab": {
+    "id": "b5b41af1-c09b-4a0c-a56f-61e9ad2668ab",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\a4104263-8575-46b4-9e45-ec75e942cb60-1754841080824.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:51:20.981Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we see some family fun!\r\n\r\nThe woman approaches with a baby bottle…\r\nTickle attack!\r\nOh, she starts laughing.\r\nIt is too much for her!\r\nShe is on the floor in a fit of giggles.\r\nWhat a great scene!"
+    },
+    "audioPath": "storage\\processed\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab_audio.mp3",
+    "processedVideoPath": "storage\\processed\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:51:31.758Z",
+    "updatedAt": "2025-08-10T15:51:31.760Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:51:20.983Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab\\b5b41af1-c09b-4a0c-a56f-61e9ad2668ab_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "839664f5-e61b-4b62-b4b0-a8a4c22b7a80": {
+    "id": "839664f5-e61b-4b62-b4b0-a8a4c22b7a80",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\3e39db21-30b1-4263-9083-7a47dbe768fd-1754841236889.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:53:57.046Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we are in the kitchen!\r\n\r\nMom's got the baby, but here comes backup.\r\nUh oh, someone's trying to tickle! \r\nThat baby doesn't know what's coming.\r\nNow the mom is laughing, too. \r\nShe drops to the floor!\r\n\r\nWhat a silly moment."
+    },
+    "audioPath": "storage\\processed\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80_audio.mp3",
+    "processedVideoPath": "storage\\processed\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:54:08.613Z",
+    "updatedAt": "2025-08-10T15:54:08.615Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:53:57.049Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80\\839664f5-e61b-4b62-b4b0-a8a4c22b7a80_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "e120c1f1-131f-4072-a918-ce54b1929539": {
+    "id": "e120c1f1-131f-4072-a918-ce54b1929539",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\fb63b4af-b2b2-42eb-b657-8246bf95a66c-1754841376547.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T15:56:16.721Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we see a mother holding her baby.\r\nOh, this is so cute!\r\nShe hands the child a toy...\r\nAnd it’s a baby bottle to the head!\r\nThey are all laughing so hard.\r\nThe toy bottles are now being thrown around.\r\nShe falls to the ground laughing.\r\nSo much laughter!\r\nWhat a cute baby.\r\n"
+    },
+    "audioPath": "storage\\processed\\e120c1f1-131f-4072-a918-ce54b1929539\\e120c1f1-131f-4072-a918-ce54b1929539_audio.mp3",
+    "processedVideoPath": "storage\\processed\\e120c1f1-131f-4072-a918-ce54b1929539\\e120c1f1-131f-4072-a918-ce54b1929539_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T15:56:28.521Z",
+    "updatedAt": "2025-08-10T15:56:28.523Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T15:56:16.723Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\e120c1f1-131f-4072-a918-ce54b1929539\\e120c1f1-131f-4072-a918-ce54b1929539_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
+  },
+  "17be9157-5469-400a-9406-5fa512be5811": {
+    "id": "17be9157-5469-400a-9406-5fa512be5811",
+    "originalName": "Untitled video - Made with Clipchamp (30).mp4",
+    "filePath": "storage\\uploads\\71f21edf-48f7-4a18-ba05-c7eb947f77d7-1754841645919.mp4",
+    "fileSize": 15880031,
+    "mimeType": "video/mp4",
+    "status": "completed",
+    "uploadedAt": "2025-08-10T16:00:46.287Z",
+    "prompt": "",
+    "style": "casual",
+    "voice": null,
+    "frames": [],
+    "script": {
+      "script": "Here we see a mom and a toddler.\r\nThe woman is offering the kid a bottle...\r\nOh, she boops the baby on the nose!\r\nNow they're chasing each other... This is adorable.\r\nShe tries to tickle the mom, and collapses.\r\nTotal laughter. What a sweet moment!\r\nAww."
+    },
+    "audioPath": "storage\\processed\\17be9157-5469-400a-9406-5fa512be5811\\17be9157-5469-400a-9406-5fa512be5811_audio.mp3",
+    "processedVideoPath": "storage\\processed\\17be9157-5469-400a-9406-5fa512be5811\\17be9157-5469-400a-9406-5fa512be5811_final.mp4",
+    "duration": 13.833333,
+    "metadata": {},
+    "processedAt": "2025-08-10T16:01:00.846Z",
+    "updatedAt": "2025-08-10T16:01:00.848Z",
+    "stages": {
+      "upload": {
+        "completed": true,
+        "completedAt": "2025-08-10T16:00:46.290Z"
+      },
+      "frameExtraction": {
+        "completed": false,
+        "completedAt": null
+      },
+      "scriptGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "audioGeneration": {
+        "completed": false,
+        "completedAt": null
+      },
+      "videoMerging": {
+        "completed": false,
+        "completedAt": null
+      }
+    },
+    "subtitlePath": "storage\\processed\\17be9157-5469-400a-9406-5fa512be5811\\17be9157-5469-400a-9406-5fa512be5811_subtitles.srt",
+    "subtitleFormat": "srt",
+    "subtitleType": "hard"
   }
 }

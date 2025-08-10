@@ -104,21 +104,15 @@ const createSmartSubtitles = (scriptText, videoDuration, format = 'srt') => {
         return format === 'srt' ? '' : 'WEBVTT\n\n';
     }
 
-    // Calculate words per minute (average reading speed: 150-200 WPM)
-    const wordsPerMinute = 180;
-    const totalWords = scriptText.split(/\s+/).length;
-    const estimatedReadingTime = (totalWords / wordsPerMinute) * 60; // in seconds
-
-    // Use the shorter duration (video or reading time) for better pacing
-    const effectiveDuration = Math.min(videoDuration, estimatedReadingTime * 1.2);
-
+    // Fixed duration per subtitle (2 seconds)
+    const subtitleDuration = 2.0;
+    
     let subtitles = format === 'vtt' ? 'WEBVTT\n\n' : '';
     let currentTime = 0;
 
     sentences.forEach((sentence, index) => {
-        const words = sentence.split(/\s+/).length;
-        const sentenceDuration = (words / wordsPerMinute) * 60 * 1.2; // Add 20% buffer
-        const endTime = Math.min(currentTime + sentenceDuration, videoDuration);
+        // Use fixed 2-second duration instead of word-based calculation
+        const endTime = Math.min(currentTime + subtitleDuration, videoDuration);
 
         const formatTime = (seconds) => {
             const hours = Math.floor(seconds / 3600);
@@ -140,7 +134,7 @@ const createSmartSubtitles = (scriptText, videoDuration, format = 'srt') => {
         subtitles += `${formatTime(currentTime)} --> ${formatTime(endTime)}\n`;
         subtitles += `${sentence.trim()}\n\n`;
 
-        currentTime = endTime + 0.5; // Small gap between subtitles
+        currentTime = endTime + 0.1; // Small gap between subtitles
     });
 
     return subtitles;
