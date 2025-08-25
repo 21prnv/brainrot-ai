@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { useState, useEffect } from "react";
 import {
@@ -21,6 +22,20 @@ const pacifico = Pacifico({
 });
 export default function HomePage() {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [email, setEmail] = useState("");
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleWaitlistSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+
+    setIsSubmitting(true);
+    // Simulate API call - replace with actual waitlist submission
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    setSubmitted(true);
+    setIsSubmitting(false);
+  };
 
   return (
     <div className="min-h-screen w-full relative bg-white">
@@ -64,9 +79,35 @@ export default function HomePage() {
           All cooked by AI for max virality
         </p>
 
-        <Button className="bg-black text-white hover:bg-gray-800 rounded-full px-8 py-3 text-lg">
-          Explore your style
-        </Button>
+        {!submitted ? (
+          <form
+            onSubmit={handleWaitlistSubmit}
+            className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto"
+          >
+            <Input
+              type="email"
+              placeholder="Enter your email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              className="flex-1 px-4 py-3 border border-gray-300 rounded-full focus:ring-2 focus:ring-black focus:border-transparent"
+              required
+            />
+            <Button
+              type="submit"
+              disabled={isSubmitting || !email}
+              className="bg-black text-white hover:bg-gray-800 disabled:bg-gray-400 disabled:cursor-not-allowed rounded-full px-8 py-3 text-lg whitespace-nowrap"
+            >
+              {isSubmitting ? "Joining..." : "Join Waitlist"}
+            </Button>
+          </form>
+        ) : (
+          <div className="text-center">
+            <p className="text-green-600 font-medium text-lg mb-2">
+              🎉 You're on the waitlist!
+            </p>
+            <p className="text-gray-600">We'll notify you when we launch.</p>
+          </div>
+        )}
       </main>
       <section className="px-5 w-full  relative z-10">
         <InfiniteMovingCards
